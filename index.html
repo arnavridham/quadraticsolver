@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Finder</title>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="form">
+        <h1 class="heading">QUADRATIC FINDER</h1>
+        <form action="">
+
+            <h2>
+            <label for="Coefficient of a">Coefficient of a:</label>
+            <input type="number" id="a" name="a"><br>
+            
+            <label for="Coefficient of c">Coefficient of b:</label>
+            <input type="number" id="b" name="b"><br>
+            
+            <label for="Coefficient of c">Coefficient of c:</label>
+            <input type="number" id="c" name="c"><br>
+            <input type="button" id="calbtn" onclick="getInputValue();" value="Calculate"></h2>
+            <h2>Your answer will be displayed here :</h2>
+            <div id="content">
+            <p>
+                
+            </p></div>
+          </form>
+
+     
+          
+     
+
+          
+    </section>
+
+    <script>
+
+        function getInputValue(){
+                let btn = document.querySelector('#calbtn');
+                let paragraph = document.querySelector('p');
+                 
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+                var c = document.getElementById("c").value;
+
+                // Discriminant 
+
+                let D = (b**2) - 4*a*c; 
+
+                // Roots
+
+                let x1 = ((-1*b) + (D)**0.5)/2*a;
+                let x2 = ((-1*b) - (D)**0.5)/2*a;
+
+
+
+                paragraph.innerText = "The roots of the given quadratic equation are: " + x1 + " and " + x2;
+                  
+              }
+
+       
+    
+       
+     </script>
+   
+
+
+    
+</body>
+
+</html>

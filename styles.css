@@ -1,0 +1,67 @@
+body {
+  /* background-image: url("D:\\Quadratic Finder\\res\\cover.jpg"); */
+  background-color: rgb(19, 19, 19);
+  background-size: cover;
+  color: azure;
+}
+
+label {
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60;
+}
+h2 {
+  font-size: 30;
+}
+
+input,
+select,
+textarea {
+  color: rgb(0, 0, 0);
+}
+
+input[type="number"],
+textarea {
+  background-color: #ffffff;
+}
+
+input[type="number" i] {
+  border: 0px solid;
+  padding: 1px 2px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="button" i] {
+  font-size: 20;
+  margin-top: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgb(2, 92, 2);
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+input[type="submit" i]:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+#content {
+  border: 2px solid white;
+  display: inline-block;
+}
+
+p {
+  padding: 20px;
+  font-size: 30;
+}
+.form {
+  align-content: center;
+  text-align: center;
+}
