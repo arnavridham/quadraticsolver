@@ -13,17 +13,18 @@
         <form action="">
 
             <h2>
-            <label for="Coefficient of a">Coefficient of a:</label>
-            <input type="number" id="a" name="a"><br>
+            <label for="Coefficient of x²">Coefficient of x² :</label>
+            <input type="number" placeholder="coefficent a" id="a" name="a" value="0"><br>
             
-            <label for="Coefficient of c">Coefficient of b:</label>
-            <input type="number" id="b" name="b"><br>
+            <label for="Coefficient of X">Coefficient of x :</label>
+            <input type="number" placeholder="coefficent b" id="b" name="b" value="0"><br>
             
-            <label for="Coefficient of c">Coefficient of c:</label>
-            <input type="number" id="c" name="c"><br>
+            <label for="Constant C" style="margin-right: 65px;">Constant C:</label>
+            <input type="number" placeholder="coefficent c" id="c" name="c" value="0"><br>
             <input type="button" id="calbtn" onclick="getInputValue();" value="Calculate"></h2>
-            <h2>Your answer will be displayed here :</h2>
+            
             <div id="content">
+            <h2 style="padding: 0px 30px; margin-bottom: 0;">Your answer will be displayed here :</h2>
             <p>
                 
             </p></div>
@@ -55,11 +56,19 @@
                 let x1 = ((-1*b) + (D)**0.5)/2*a;
                 let x2 = ((-1*b) - (D)**0.5)/2*a;
 
+                if (a==0) {
+                paragraph.innerText = "a cannot be zero";
+                    
+                } else {
+                
+                paragraph.innerText = "The roots of the given quadratic equation " + a +"x+" + b +"x²+" + c + " are: " +
+                x1 + " and " + x2;
+                    
+                };
 
-
-                paragraph.innerText = "The roots of the given quadratic equation are: " + x1 + " and " + x2;
+               
                   
-              }
+            };
 
        
     
