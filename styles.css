@@ -52,16 +52,17 @@ input[type="button" i] {
   margin-top: 20px;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: rgb(2, 92, 2);
+  background-color: rgb(19, 19, 19);
   border: 0;
   color: white;
   border-radius: 5px;
   transition: 0.3s;
   outline: none;
+  border: 2px solid rgb(2, 92, 2);
 }
 
 input[type="button" i]:hover {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(2, 92, 2);
   outline: none;
 }
 
